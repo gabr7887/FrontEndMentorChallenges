@@ -14,6 +14,18 @@ h1,h2,h3,h4,p,body{
   padding: 0px;
 }
 
+img{
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 .corp1{
   color: var(--corp1);
 }
@@ -44,5 +56,29 @@ h1,h2,h3,h4,p,body{
 
 .corn6{
   color: var(--corn6);
+}
+
+.title{
+  font-size: 4rem;
+  font-family: "young serif";
+  font-weight: 400;
+}
+
+.para1{
+  font-size: 1.5rem;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+
+.font-s{
+  font-family: "outfit";
+  font-weight: 600;
+}
+
+.subtitle{
+  font-size: 3rem;
+  font-family: "young serif";
+  font-weight: 400;
+  margin-bottom: 40px;
 }
 

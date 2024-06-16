@@ -1,0 +1,68 @@
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+#omelette-img{
+  margin-top: 40px;
+  border-radius: 16px;
+}
+
+main h1{
+  margin-top: 40px;
+}
+
+.list-1 {
+  display: grid;
+  gap: 16px;
+}
+
+.list-1 li {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-family: "outfit";
+  font-size: 1.5rem;
+  color: var(--corn5);
+}
+
+.list-1 li .font-s {
+ color: var(--corn6);
+}
+
+.list-icon{
+  display:block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+#card {
+  background-color: var(--corn2);
+  display: grid;
+  gap: 20px;
+  padding: 40px;
+  margin: 40px 0px;
+  border-radius: 16px;
+}
+
+#card h3 {
+  font-size: 1.75rem;
+  color: var(--corp2);
+}
+
+#card .list-icon{
+  background-color: var(--corp2);
+}
+
+#ingredients .list-icon{
+  background-color: var(--corp1);
+}
+
+#ingredients{
+  
+}
