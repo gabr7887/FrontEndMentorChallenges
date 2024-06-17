@@ -14,9 +14,11 @@ main{
   max-width: 700px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   background-color: var(--cor1);
   padding: 40px;
   gap: 40px;
+  border-radius: 16px;
 }
 
 #title{
@@ -29,3 +31,42 @@ main{
   font-weight: 700;
   font-size: 3rem;
 }
+
+.accordion{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.accordion-item{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  cursor: pointer;
+}
+
+.question-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question{
+  font-size: 1rem;
+  font-family: "work sans";
+  font-weight: 600;
+  color: var(--cor4);
+}
+
+.response{
+  display: none;
+  font-size: 1rem;
+  font-family: "work sans";
+  font-weight: 400;
+  color: var(--cor3);
+}
+
+.active .response{
+  display: block;
+}
+
