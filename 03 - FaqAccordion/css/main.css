@@ -1,0 +1,31 @@
+body{
+  background-color: var(--cor2);
+  background-image: url(../assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main{
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor1);
+  padding: 40px;
+  gap: 40px;
+}
+
+#title{
+  display: flex;
+  gap: 16px;
+}
+
+#title h1{
+  font-family: "work sans";
+  font-weight: 700;
+  font-size: 3rem;
+}
