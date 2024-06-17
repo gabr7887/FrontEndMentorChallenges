@@ -1,0 +1,49 @@
+:root{
+  --corp1: hsl(75, 94%, 57%);
+  --corn1: hsl(0, 0%, 100%);
+  --corn2: hsl(0, 0%, 20%);
+  --corn3: hsl(0, 0%, 12%);
+  --corn4: hsl(0, 0%, 8%);
+}
+
+.corp1{
+  color: var(--corp1);
+}
+
+.corn1{
+  color: var(--corn1);
+}
+
+.corn2{
+  color: var(--corn2);
+}
+
+.corn3{
+  color: var(--corn3);
+}
+
+.corn4{
+  color: var(--corn4);
+}
+
+
+h1,h2,h3,h4,p,body{
+  margin: 0px;
+  padding: 0px;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
