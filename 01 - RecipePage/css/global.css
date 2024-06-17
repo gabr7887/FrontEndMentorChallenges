@@ -82,3 +82,66 @@ ul, ol{
   margin-bottom: 40px;
 }
 
+.list-1 {
+  display: grid;
+  gap: 16px;
+}
+
+.list-1 li {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.list-1 li .font-s {
+ color: var(--corn6);
+}
+
+.list-1 li, .list-2 li, .list-3 li{
+  font-family: "outfit";
+  font-size: 1.5rem;
+  color: var(--corn5);
+}
+
+.list-icon{
+  display:block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.list-2 {
+  counter-reset: contador;
+  display: grid;
+  gap: 16px;
+}
+
+.list-2 li{
+  position: relative;
+}
+
+.list-2 li::before{
+  counter-increment: contador;
+  content:counter(contador)".";
+  font-family: "outfit";
+  font-weight: 600;
+  color: var(--corp1);
+  position: absolute;
+  left: -40px;
+}
+
+.list-3{
+  margin-top: 40px;
+}
+
+.list-3 li{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 40px;
+}
+
+.list-3 li:nth-last-child(n + 2){
+  border-bottom: 2px solid var(--corn4);
+}
+
