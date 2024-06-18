@@ -3,26 +3,62 @@
   --corp2:hsl(39, 100%, 56%);
   --corp3:hsl(166, 100%, 37%);
   --corp4:hsl(234, 85%, 45%);
+  --corp1a:hsla(0, 100%, 67%, 10%);
+  --corp2a:hsla(39, 100%, 56%, 10%);
+  --corp3a:hsla(166, 100%, 37%, 10%);
+  --corp4a:hsla(234, 85%, 45%, 10%);
   --corn1:hsl(0, 0%, 100%);
   --corn2:hsl(221, 100%, 96%);
   --corn3:hsl(241, 100%, 89%);
   --corn4:hsl(224, 30%, 27%);
 }
 
-.cor1{
-  color: var(--cor1);
+.corp1{
+  color: var(--corp1);
 }
 
-.cor2{
-  color: var(--cor2);
+.corp2{
+  color: var(--corp2);
 }
 
-.cor3{
-  color: var(--cor3);
+.corp3{
+  color: var(--corp3);
 }
 
-.cor4{
-  color: var(--cor4);
+.corp4{
+  color: var(--corp4);
+}
+
+.corpbg1{
+  background-color: var(--corp1a);
+}
+
+.corpbg2{
+  background-color: var(--corp2a);
+}
+
+.corpbg3{
+  background-color: var(--corp3a);
+}
+
+.corpbg4{
+  background-color: var(--corp4a);
+}
+
+.corn1{
+  color: var(--corn1);
+}
+
+.corn2{
+  color: var(--corn2);
+}
+
+.corn3{
+  color: var(--corn3);
+}
+
+.corn4{
+  color: var(--corn4);
 }
 
 h1,h2,h3,h4,p,body{

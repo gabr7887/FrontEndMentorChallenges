@@ -1,0 +1,147 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  border-radius: 16px;
+  box-shadow: 2px 2px 6px var(--corn3);
+}
+
+#second-side, #first-side{
+  width: 50%;
+}
+
+#first-side{
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#first-side h2, #second-side h2, #button{
+  font-size: 1.5rem;
+  font-family: "Hanken Grotesk";
+  font-weight: 700;
+}
+
+#second-side h2{
+  color: var(--corn4);
+}
+
+#first-side h2{
+  color: var(--corn1);
+}
+
+
+#first-side div{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+
+#first-side p{
+  color: var(--corn2);
+  max-width: 75%;
+}
+
+#result-total, #first-side p, #second-side ul li div span, #number-span{
+  font-size: 1.125rem;
+  font-family: "Hanken Grotesk";
+  font-weight: 500;
+}
+
+#result-total{
+color: var(--corn3);
+}
+
+#result-number{
+  font-size:4rem;
+}
+
+#sub{
+  font-size: 2rem;
+}
+
+#result-number, #sub{
+  font-family: "Hanken Grotesk";
+  font-weight: 800;
+  color: var(--corn1);
+}
+
+#second-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#second-side ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+
+#second-side ul li{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+#second-side ul li div{
+  display: flex;
+  gap: 8px;
+}
+
+#number-span{
+  color: var(--corn3);
+}
+
+#number-strong{
+  font-weight: 800;
+  color: var(--corn4);
+}
+
+#button{
+  width: 100%;
+  padding: 16px 0px;
+  background-color: var(--corn4);
+  border-radius: 32px;
+  font-weight: 700;
+  color: var(--corn1);
+}
+
+#button:hover{
+  background-color: none;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media (width <= 850px) {
+  main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #second-side, #first-side{
+    width: 100%;
+    padding: 20px 0px;
+
+  }
+}
+
+
