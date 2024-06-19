@@ -132,6 +132,11 @@ color: var(--corn3);
 }
 
 @media (width <= 850px) {
+  body{
+    width: auto;
+    height: auto;
+  }
+  
   main{
     flex-direction: column;
     align-items: center;
@@ -141,6 +146,11 @@ color: var(--corn3);
     width: 100%;
     padding: 20px 0px;
 
+  }
+
+  #second-side ul{
+    padding: 0px 20px;
+    width: 90%;
   }
 }
 
