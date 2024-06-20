@@ -72,7 +72,7 @@ main{
   cursor: pointer;
 }
 
-#button:hover{
+#button:hover, #button:focus{
   background-color: var(--corn1);
 }
 
@@ -89,7 +89,6 @@ main{
     width: auto;
     height: auto;
   }
-
   main{
     grid-template-columns: 1fr;
   }
@@ -98,7 +97,6 @@ main{
     height: 30vh;
     border-radius: 16px 16px 0px 0px;
   }
-
   main{
     max-height: fit-content;
   }
