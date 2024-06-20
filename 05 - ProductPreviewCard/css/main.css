@@ -1,0 +1,90 @@
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--corp2);
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+  max-height: 450px;
+  background-color: var(--corn3);
+  border-radius: 16px;
+}
+
+#photo{
+  background-image: url(../imgs/image-product-desktop.jpg);
+  background-size: cover;
+  height: 450px;
+  border-radius: 16px 0px 0px 16px;
+  cursor: pointer;
+}
+
+#second-side{
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+#tag, #second-side p, #second-price{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--corn2);
+}
+
+#name{
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 2.125rem;
+}
+
+#price-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#price{
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 2.125rem;
+  color: var(--corp1);
+}
+
+#second-price{
+  text-decoration: line-through;
+}
+
+#button{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: var(--corp1);
+  cursor: pointer;
+}
+
+#button:hover{
+  background-color: var(--corn1);
+}
+
+#button a{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--corn3);
+}
+
+
+
+
+
+

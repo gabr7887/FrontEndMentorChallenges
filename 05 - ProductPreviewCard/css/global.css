@@ -1,0 +1,29 @@
+:root{
+  --corp1: hsl(158, 36%, 37%);
+  --corp2: hsl(30, 38%, 92%);
+  --corn1: hsl(212, 21%, 14%);
+  --corn2: hsl(228, 12%, 48%);
+  --corn3: hsl(0, 0%, 100%);
+}
+
+
+h1,h2,h3,h4,p,body{
+  margin: 0px;
+  padding: 0px;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
