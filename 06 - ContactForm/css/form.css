@@ -1,7 +1,101 @@
+:root{
+  --corp1: hsl(148, 38%, 91%);
+  --corp2: hsl(169, 82%, 27%);
+  --corp3: hsl(0, 66%, 54%);
+  --corn1: hsl(0, 0%, 100%);
+  --corn2: hsl(186, 15%, 59%);
+  --corn3: hsl(187, 24%, 22%);
+}
+
+h1,h2,h3,h4,p,body{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--corp1);
+}
+
+form{
+  background-color: var(--corn1);
+  border-radius: 16px;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  font-family: 'karla';
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+form h1{
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.input-div{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#query-div, #name-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#query-div > label{
+  grid-column: 1/-1;
+}
+
+input[type=text], input[type=email], input[type=textarea]{
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: solid 1px #000;
+} 
+
+input:focus{
+  border: solid 1px var(--corp2);
+  outline: inset 1px var(--corp1);
+}
+
+.error-state input{
+  border: solid 1px var(--corp3);
+}
+
+.error-state input:focus{
+  outline: inset 1px var(--corp3);
+}
+
 p{
+  color: var(--corp3);
   display: none;
 }
 
-.error{
+.error-message{
   display: block;
+}
+
+.radio-div{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: solid 1px #000;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+@media (width <= 500px) {
+  body{
+    height: 100%;
+  }
+  #query-div, #name-div{
+    grid-template-columns: 1fr;
+  }
 }

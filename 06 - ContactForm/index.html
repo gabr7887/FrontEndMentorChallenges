@@ -4,34 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ContactForm</title>
   <link rel="stylesheet" href="./css/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>ContactForm</title>
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
-  <form action="">
+  <form>
     <h1>Contact Us</h1>
-    <label for="firstName">First Name*</label>
-    <input type="text" name="firstName" id="firstName">
-    <p>esse campo precisa ser preenchido</p>
-    <label for="lastName">Last Name*</label>
-    <input type="text" name="lastName" id="lastName">
-    <p>esse campo precisa ser preenchido</p>
-    <label for="email">Email*</label>
-    <input type="email" name="email" id="email">
-    <p>esse campo precisa ser preenchido</p>
-    <div id="queryDiv">
-      <label for="queryDiv">Query Type*</label>
-      <input type="radio" name="option" id="generalOption">
-      <label for="generalOption">General Enquiry</label>
-      <input type="radio" name="option" id="supportOption">
-      <label for="supportOption">Support Request</label>
-      <p>esse campo precisa ser preenchido</p>
+    <div id="name-div">
+      <div class="input-div">
+        <label for="firstName">First Name*</label>
+        <input type="text" name="firstName" id="firstName">
+        <p>This field is required</p>
+      </div>
+      <div class="input-div">
+        <label for="lastName">Last Name*</label>
+        <input type="text" name="lastName" id="lastName">
+        <p>This field is required</p>
+      </div>
     </div>
-    <label for="message">Message*</label>
-    <input type='textarea' id="message">
-    <p>esse campo precisa ser preenchido</p>
+    <div id="email-div" class="input-div">
+      <label for="email">Email Address*</label>
+      <input type="email" name="email" id="email" placeholder="Example@gmail.com">
+      <p>Please enter a valid email address</p>
+    </div>
+    <div id="query-div">
+      <label for="query-div">Query Type*</label>
+      <div class="radio-div">
+        <input type="radio" name="option" id="generalOption">
+        <label for="generalOption">General Enquiry</label>
+      </div>
+      <div class="radio-div">
+        <input type="radio" name="option" id="supportOption">
+        <label for="supportOption">Support Request</label>
+      </div>
+      <p>Please select a query type</p>
+    </div>
+    <div id="message-div" class="input-div">
+      <label for="message">Message*</label>
+      <input type='textarea' id="message">
+      <p>this field is required</p>
+    </div>
+    <div id="check-div">
+      <input type="checkbox" id="consent" name="consent">
+      <label for="consent">I consent to being contacted by the team *</label>
+      <p>To submit this form, please consent to being contacted</p>
+    </div>
     <button>Submit</button>
   </form>
 </body>
