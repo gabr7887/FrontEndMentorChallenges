@@ -36,11 +36,11 @@
       <label for="query-div">Query Type*</label>
       <div class="radio-div">
         <input type="radio" name="option" id="generalOption">
-        <label for="generalOption">General Enquiry</label>
+        <label for="generalOption" tabindex="0">General Enquiry</label>
       </div>
       <div class="radio-div">
         <input type="radio" name="option" id="supportOption">
-        <label for="supportOption">Support Request</label>
+        <label for="supportOption" tabindex="0">Support Request</label>
       </div>
       <p>Please select a query type</p>
     </div>
@@ -51,11 +51,12 @@
     </div>
     <div id="check-div">
       <input type="checkbox" id="consent" name="consent">
-      <label for="consent">I consent to being contacted by the team *</label>
+      <label for="consent" tabindex="0">I consent to being contacted by the team *</label>
       <p>To submit this form, please consent to being contacted</p>
     </div>
     <button>Submit</button>
   </form>
+  <script src="./script.js"></script>
 </body>
 
 </html>
