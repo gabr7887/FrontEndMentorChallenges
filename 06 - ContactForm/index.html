@@ -13,46 +13,40 @@
 </head>
 
 <body>
+  <h1>Contact Us</h1>
   <form>
-    <h1>Contact Us</h1>
-    <div id="name-div">
-      <div class="input-div">
-        <label for="firstName">First Name*</label>
+    <div class="input-box-div">
+      <div>
+        <label for="firstName">First Name <span>*</span></label>
         <input type="text" name="firstName" id="firstName">
-        <p>This field is required</p>
       </div>
-      <div class="input-div">
-        <label for="lastName">Last Name*</label>
+      <div>
+        <label for="lastName">Last Name <span>*</span></label>
         <input type="text" name="lastName" id="lastName">
-        <p>This field is required</p>
       </div>
     </div>
-    <div id="email-div" class="input-div">
-      <label for="email">Email Address*</label>
-      <input type="email" name="email" id="email" placeholder="Example@gmail.com">
-      <p>Please enter a valid email address</p>
+    <div class="email-div">
+      <label for="email">Email Address<span>*</span></label>
+      <input type="email" name="email" id="email">
     </div>
-    <div id="query-div">
-      <label for="query-div">Query Type*</label>
-      <div class="radio-div">
-        <input type="radio" name="option" id="generalOption">
-        <label for="generalOption" tabindex="0">General Enquiry</label>
+    <div class="input-box-div">
+      <label>Query Type<span>*</span></label>
+      <div>
+        <input type="radio" name="query" id="general">
+        <label for="general">General Enquiry</label>
       </div>
-      <div class="radio-div">
-        <input type="radio" name="option" id="supportOption">
-        <label for="supportOption" tabindex="0">Support Request</label>
+      <div>
+        <input type="radio" name="query" id="support">
+        <label for="support">Support Request</label>
       </div>
-      <p>Please select a query type</p>
     </div>
-    <div id="message-div" class="input-div">
-      <label for="message">Message*</label>
-      <input type='textarea' id="message">
-      <p>this field is required</p>
+    <div>
+      <label for="message">Message <span>*</span></label>
+      <textarea name="message" id="message"></textarea>
     </div>
-    <div id="check-div">
-      <input type="checkbox" id="consent" name="consent">
-      <label for="consent" tabindex="0">I consent to being contacted by the team *</label>
-      <p>To submit this form, please consent to being contacted</p>
+    <div>
+      <input type="checkbox" name="check" id="check">
+      <label for="check">I consent to being contacted by the team <span>*</span></label>
     </div>
     <button>Submit</button>
   </form>
