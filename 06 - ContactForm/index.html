@@ -18,35 +18,41 @@
     <div class="input-box-div">
       <div>
         <label for="firstName">First Name <span>*</span></label>
-        <input type="text" name="firstName" id="firstName">
+        <input type="text" name="firstName" required id="firstName">
+        <p class="error-message">this field is required</p>
       </div>
       <div>
         <label for="lastName">Last Name <span>*</span></label>
-        <input type="text" name="lastName" id="lastName">
+        <input type="text" name="lastName" required id="lastName">
+        <p class="error-message">this field is required</p>
       </div>
     </div>
     <div class="email-div">
       <label for="email">Email Address<span>*</span></label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" required id="email">
+      <p class="error-message">please enter a valid email address</p>
     </div>
     <div class="input-box-div">
       <h2>Query Type<span>*</span></h2>
       <div class="radio-box">
-        <input type="radio" name="query" id="general">
-        <label for="general" tabindex="0">General Enquiry</label>
+        <input type="radio" name="query" value="test" id="general" required>
+        <label for="general">General Enquiry</label>
       </div>
       <div class="radio-box">
-        <input type="radio" name="query" id="support">
-        <label for="support" tabindex="0">Support Request</label>
+        <input type="radio" name="query" value="test" id="support">
+        <label for="support">Support Request</label>
       </div>
+      <p class="error-message">please select a query type</p>
     </div>
     <div>
       <label for="message">Message <span>*</span></label>
-      <textarea name="message" id="message"></textarea>
+      <textarea name="message" required id="message"></textarea>
+      <p class="error-message">this field is required</p>
     </div>
     <div>
-      <input type="checkbox" name="check" id="check">
+      <input type="checkbox" name="check" id="check" required>
       <label for="check">I consent to being contacted by the team <span>*</span></label>
+      <p class="error-message">to submit this form please consent to being contacted</p>
     </div>
     <button>Submit</button>
   </form>

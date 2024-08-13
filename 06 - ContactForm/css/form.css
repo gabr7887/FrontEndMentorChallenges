@@ -41,6 +41,10 @@ form h1{
   margin-bottom: 12px;
 }
 
+form label span, form h2 span{
+  color: var(--corp2);
+}
+
 label{
   display: block;
   font: var(--font1);
@@ -58,29 +62,47 @@ input[type="text"], input[type="email"], textarea{
   padding: 0.5rem 0px;
   min-width: 250px;
   min-height: 20px;
+  cursor: pointer;
+  outline: none;
 }
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
+  border-color: var(--corp2);
+}
+
+
 
 textarea{
   min-height: 60px;
 }
 
-input[type="radio"]{
-  display: none;
+input[type="radio"], input[type="checkbox"]{
+appearance: none;
+position: absolute;
 }
 
-input[type="radio"]:checked{
+input[type="checkbox"]+ label{
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+input[type="radio"]:focus + label, input[type="checkbox"]:focus + label{
+  border: 2px solid var(--corn3);
 }
 
 input[type="radio"] + label{
   padding: 10px 0px 10px 40px;
   width: 100%;
   border: 1px solid var(--corn3);
+  box-sizing: border-box;
   border-radius: 6px;
   font: var(--font1);
   cursor: pointer;
   position: relative;
   display: flex;
   align-items: center;
+  user-select: none;
+
 }
 
 input[type="radio"]:checked + label{
@@ -96,11 +118,12 @@ input[type="radio"] + label::before{
   padding: 2px;
   left: 10px;
   border-radius: 50%;
-  border: 1px solid var(--corp2);
+  border: 1px solid var(--corn2);
 }
 
 input[type="radio"]:checked + label::before{
   background: radial-gradient(circle, var(--corp2) 50%, #fff 50%);
+  border-color: var(--corp2);
 }
 
 .radio-box{
@@ -113,7 +136,7 @@ input[type="radio"]:checked + label::before{
 .input-box-div{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 0px 16px;
 }
 
 .input-box-div h2{
@@ -121,3 +144,63 @@ input[type="radio"]:checked + label::before{
   grid-column: 1/-1;
 }
 
+input[type="checkbox"] + label{
+  display: block;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+input[type="checkbox"] + label::before{
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--corn2);
+  margin-right: 16px;
+}
+
+input[type="checkbox"]:checked + label::before{
+  background-image: url(../images/icon-checkbox-check.svg);
+  background-position: center;
+}
+
+button{
+  padding: 12px 0px;
+  cursor: pointer;
+  font: var(--font2);
+  border-radius: 6px;
+  border: none;
+  background-color: var(--corp2);
+  color: var(--corn1);
+}
+
+button:hover{
+  background-color: var(--corn3);
+}
+
+.error-message{
+  display: none;
+  font: var(--font1);
+  color: var(--corp3);
+}
+
+.error-state .error-message{
+  display: block;
+}
+
+.error-state input, .error-state textarea{
+  border-color: red;
+}
+
+
+@media (width <= 600px) {
+  body{
+    height: 100%;
+  }
+  .input-box-div{
+    grid-template-columns: 1fr;
+  }
+}
