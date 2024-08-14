@@ -23,6 +23,7 @@ body{
   align-items: center;
   background-color: var(--corp1);
   flex-direction: column;
+  position: relative;
 }
 
 form{
@@ -195,6 +196,48 @@ button:hover{
   border-color: red;
 }
 
+.response-div{
+  position: fixed;
+  top: 20px;
+  background-color: var(--corn3);
+  padding: 20px;
+  border-radius: 8px;
+  display: grid;
+  gap: 12px;
+  display: none;
+}
+
+.response-div div{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.response-div div h2, .response-error-div h2{
+  margin: 0px;
+  font: var(--font2);
+  font-size: 1.125rem;
+  color: var(--corn1);
+}
+
+.response-div p, .response-error-div p{
+  color: var(--corn1);
+  font: var(--font1);
+}
+
+.response-error-div{
+  background-color: var(--corp3);
+  padding: 20px;
+  border-radius: 8px;
+  position: fixed;
+  top: 20px;
+  display: none;
+  gap: 12px;
+}
+
+.response-div.active, .response-error-div.active{
+  display: grid;
+}
 
 @media (width <= 600px) {
   body{

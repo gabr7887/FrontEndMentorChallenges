@@ -13,29 +13,29 @@
 </head>
 
 <body>
-  <form>
+  <form novalidate>
     <h1>Contact Us</h1>
     <div class="input-box-div">
       <div>
         <label for="firstName">First Name <span>*</span></label>
-        <input type="text" name="firstName" required id="firstName">
+        <input type="text" name="firstName" data-input required id="firstName">
         <p class="error-message">this field is required</p>
       </div>
       <div>
         <label for="lastName">Last Name <span>*</span></label>
-        <input type="text" name="lastName" required id="lastName">
+        <input type="text" name="lastName" data-input required id="lastName">
         <p class="error-message">this field is required</p>
       </div>
     </div>
     <div class="email-div">
       <label for="email">Email Address<span>*</span></label>
-      <input type="email" name="email" required id="email">
+      <input type="email" name="email" data-input required id="email">
       <p class="error-message">please enter a valid email address</p>
     </div>
     <div class="input-box-div">
       <h2>Query Type<span>*</span></h2>
       <div class="radio-box">
-        <input type="radio" name="query" value="test" id="general" required>
+        <input type="radio" name="query" data-input value="test" id="general" required>
         <label for="general">General Enquiry</label>
       </div>
       <div class="radio-box">
@@ -46,16 +46,27 @@
     </div>
     <div>
       <label for="message">Message <span>*</span></label>
-      <textarea name="message" required id="message"></textarea>
+      <textarea name="message" required data-input id="message"></textarea>
       <p class="error-message">this field is required</p>
     </div>
     <div>
-      <input type="checkbox" name="check" id="check" required>
+      <input type="checkbox" name="check" data-input id="check" required>
       <label for="check">I consent to being contacted by the team <span>*</span></label>
       <p class="error-message">to submit this form please consent to being contacted</p>
     </div>
     <button>Submit</button>
   </form>
+  <div class="response-div">
+    <div>
+      <img src="./images/icon-success-check.svg" alt="">
+      <h2>Message Sent!</h2>
+    </div>
+    <p>thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  <div class="response-error-div">
+    <h2>An error ocurred!</h2>
+    <p>Please correct the form, and resend!</p>
+  </div>
   <script src="./script.js"></script>
 </body>
 
