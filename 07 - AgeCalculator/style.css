@@ -1,0 +1,58 @@
+:root{
+  --pcorPurple: hsl(259, 100%, 65%);
+  --pcorLightRed: hsl(0, 100%, 67%);
+  --ncorWhite: hsl(0, 0%, 100%);
+  --ncorOffWhite: hsl(0, 0%, 94%);
+  --ncorLightGrey: hsl(0, 0%, 86%);
+  --ncorSmokeyGrey: hsl(0, 1%, 44%);
+  --ncorOffBlack: hsl(0, 0%, 8%);
+}
+
+h1,h2,h3,h4,p,body{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ncorOffWhite);
+  flex-direction: column;
+}
+
+.container{
+  background-color: var(--ncorWhite);
+  padding: 48px;
+  border-radius: 12px 12px 128px 12px;
+}
+
+form{
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+}
+
+form button{
+  padding: 0;
+  grid-column: 1/-1;
+  grid-row: 2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: linear-gradient(180deg, transparent 45%, var(--ncorOffWhite) 46%, transparent 54%);
+  border: none;
+}
+
+
+form button img{
+  padding: 16px;
+  background-color: var(--pcorPurple);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+form button img:hover{
+  background-color: var(--ncorOffBlack);
+}
