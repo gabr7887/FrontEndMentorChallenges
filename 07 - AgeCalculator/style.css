@@ -13,6 +13,11 @@ h1,h2,h3,h4,p,body{
   padding: 0px;
 }
 
+img{
+  max-width: 100%;
+  display: block;
+}
+
 body{
   width: 100%;
   height: 100vh;
@@ -27,11 +32,14 @@ body{
   background-color: var(--ncorWhite);
   padding: 48px;
   border-radius: 12px 12px 128px 12px;
+  box-sizing: border-box;
+  margin: 0px 20px;
 }
 
 form{
   display: grid;
-  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
 }
 
 form button{
@@ -41,7 +49,7 @@ form button{
   display: flex;
   justify-content: end;
   align-items: center;
-  background: linear-gradient(180deg, transparent 45%, var(--ncorOffWhite) 46%, transparent 54%);
+  background: linear-gradient(180deg, transparent 45%,  var(--ncorLightGrey) 46%, var(--ncorLightGrey) 50%, transparent 50%);
   border: none;
 }
 
@@ -55,4 +63,121 @@ form button img{
 
 form button img:hover{
   background-color: var(--ncorOffBlack);
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form div input{
+ width: 100%;
+ max-width: 150px;
+ padding: 12px;
+ box-sizing: border-box;
+ border: 1px solid var(--ncorLightGrey);
+ border-radius: 8px;
+ font-size: 1.25rem;
+ font-family: 'poppins';
+ font-weight: 700;
+ color: var(--ncorOffBlack);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form div input:focus{
+  outline-color: var(--pcorPurple);
+}
+
+label{
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'poppins';
+  color: var(--ncorSmokeyGrey);
+}
+
+.error{
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: 'poppins';
+  color: var(--pcorLightRed);
+  display: none;
+  transition: 0.3s;
+}
+
+.errorState label{
+  color: var(--pcorLightRed);
+}
+
+.errorState input{
+  border-color: var(--pcorLightRed);
+}
+
+.errorState .error{
+  display: block;
+}
+
+.results div{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.results div span, .results div p{
+  font-family: 'poppins';
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.results div span{
+  color: var(--pcorPurple);
+}
+
+.results div p{
+  color: var(--ncorOffBlack);
+}
+
+@media (width < 600px) {
+  body{
+    height: 100%;
+  }
+
+  .container{
+    padding: 48px 24px;
+  }
+  
+  form{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  label{
+    font-size: 0.875rem;
+  }
+
+  form button{
+    justify-content: center;
+  }
+
+  form button img{
+    max-height: 20px;
+    padding: 16px;
+  }
+
+  form div{
+    gap: 4px;
+  }
+
+  form div input{
+    font-size: 1rem;
+  }
+
+  .results div span, .results div p{
+    font-size: 2.5rem;
+  }
 }
